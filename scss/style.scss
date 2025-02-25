@@ -8,3 +8,313 @@
 @use"./home.scss";
 @use"./servise.scss";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#nav-open {
+    display: none;
+    background-color: red;
+  }
+  
+  #navbar-responsive {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+  }
+  
+  #navbar-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: red;
+    cursor: pointer;
+  }
+  
+  // Rangsiz o'zgaruvchilar
+$primary-color: #162d3d;
+$secondary-color: #f19e39;
+$white: #fff;
+
+// Navbar Style
+.header {
+  background: $white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-section {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left img {
+      height: 40px;
+    }
+
+    &__right ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+
+      .navbar-item {
+        .navbar-link {
+          text-decoration: none;
+          color: $primary-color;
+          font-size: 1rem;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-page {
+    background: $secondary-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background: darken($secondary-color, 10%);
+    }
+  }
+
+  // Menu button (default hidden for large screens)
+  #navbar-open {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .header-section__right {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: $white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px 0;
+
+    ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &.active {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .btn-page {
+    display: none; // Kichik ekranda yashirish
+  }
+
+  #navbar-open {
+    display: block;
+  }
+}
+
+
+$primary-color: #0c2940;
+$secondary-color: #f19e39;
+$text-color: #ffffff;
+$grey-color: #b0b0b0;
+
+.footer {
+  background: $primary-color;
+  padding: 50px 20px;
+  color: $text-color;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .footer-left {
+      max-width: 300px;
+
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .footer-title {
+        font-size: 18px;
+        margin-top: 10px;
+        strong {
+          font-weight: bold;
+        }
+      }
+
+      .footer-social {
+        margin: 15px 0;
+        a {
+          margin-right: 10px;
+          img {
+            width: 24px;
+            transition: transform 0.3s ease;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+
+      .copyright {
+        font-size: 14px;
+        color: $grey-color;
+      }
+    }
+
+    .footer-middle {
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          margin-bottom: 5px;
+          a {
+            color: $text-color;
+            text-decoration: none;
+            transition: color 0.3s;
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-contact {
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 5px 0;
+      }
+    }
+
+    .footer-newsletter {
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+      }
+      button {
+        background: $secondary-color;
+        color: $text-color;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        &:hover {
+          background: darken($secondary-color, 10%);
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px;
+    
+    a {
+      color: $grey-color;
+      text-decoration: none;
+      font-size: 14px;
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+// **📌 RESPONSIVE DESIGN**
+@media (max-width: 768px) {
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .footer-left, .footer-middle, .footer-contact, .footer-newsletter {
+      max-width: 100%;
+    }
+
+    .footer-newsletter form {
+      flex-direction: column;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
