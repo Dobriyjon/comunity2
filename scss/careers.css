@@ -1,1 +1,113 @@
-/*# sourceMappingURL=careers.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fc;
+  color: #333;
+  padding: 20px;
+}
+
+.job-description {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+.job-description h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.job-description .details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+}
+.job-description .details .left {
+  color: #666;
+}
+.job-description .details .right {
+  font-weight: 600;
+  color: #000;
+}
+
+.requirements-section {
+  background: #eef4fc;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+.requirements-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.requirements-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+.requirements-section .highlight {
+  color: #ff7b00;
+  font-weight: 600;
+}
+
+.apply-now h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.apply-now form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.apply-now form .form-group {
+  display: flex;
+  gap: 12px;
+}
+.apply-now form .form-group input,
+.apply-now form .form-group textarea {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.apply-now form textarea {
+  resize: none;
+  height: 100px;
+}
+.apply-now form .submit-btn {
+  background: #ff7b00;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.apply-now form .submit-btn:hover {
+  background: #e66a00;
+}
+
+@media (max-width: 768px) {
+  .job-description,
+  .requirements-section {
+    padding: 16px;
+  }
+  .job-description .details {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .apply-now form .form-group {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=careers.css.map */
