@@ -1,1 +1,102 @@
-/*# sourceMappingURL=blog-inner.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1385px) {
+  .prect-imgs img {
+    width: 100%;
+  }
+}
+body {
+  overflow-x: hidden; /* Gorizontal skrollni yo‘q qilish */
+}
+
+.container {
+  max-width: 100%; /* Katta ekranlarda cheklash, lekin kichik ekranda moslashish */
+}
+
+@media (max-width: 780px) {
+  p {
+    font-size: 14px; /* Matnni kichikroq qilish */
+    line-height: 24px; /* O‘qilishi uchun yaxshi bo‘ladi */
+    text-align: center; /* Matnni markazga olish */
+    width: 90%; /* Ekranga sig‘dirish */
+    margin: 0 auto; /* Markazga joylash */
+    overflow-wrap: break-word; /* So‘zlarni ajratib ekranga sig‘dirish */
+    word-wrap: break-word;
+    white-space: normal; /* Matnning to‘g‘ri chiqishini ta’minlash */
+  }
+}
+main {
+  margin-bottom: 128px;
+}
+
+.prect-imgs {
+  margin-top: 112px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+div h2 {
+  width: 700px;
+  height: 216px;
+  top: 947px;
+  left: 584px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -3%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.plugin p {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  display: flex;
+  justify-content: center;
+  width: 752px;
+  height: 168px;
+  top: 1195px;
+  left: 584px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+.plugin h3 {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  width: 752px;
+  height: 168px;
+  top: 1739px;
+  left: 584px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -3%;
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}/*# sourceMappingURL=blog-inner.css.map */
