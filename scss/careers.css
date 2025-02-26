@@ -84,30 +84,32 @@ body {
   resize: none;
   height: 100px;
 }
-.apply-now form .submit-btn {
+.apply-now form .submit-btn .submit-btn {
   background: #ff7b00;
   color: white;
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 8px 16px;
+  font-size: 14px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s;
+  width: 120px;
+  text-align: center;
+  margin: 0 auto;
 }
-.apply-now form .submit-btn:hover {
+.apply-now form .submit-btn .submit-btn:hover {
   background: #e66a00;
 }
-
 @media (max-width: 768px) {
-  .job-description,
-  .requirements-section {
+  .apply-now .job-description,
+  .apply-now .requirements-section {
     padding: 16px;
   }
-  .job-description .details {
+  .apply-now .job-description .details {
     flex-direction: column;
     gap: 8px;
   }
-  .apply-now form .form-group {
+  .apply-now .apply-now form .form-group {
     flex-direction: column;
   }
 }/*# sourceMappingURL=careers.css.map */
