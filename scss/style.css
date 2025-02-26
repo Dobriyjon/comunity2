@@ -70,6 +70,7 @@
   color: #162d3d;
   font-size: 1rem;
   transition: color 0.3s ease;
+  font-family: Poppins;
 }
 .header .header-section__right ul .navbar-item .navbar-link:hover {
   color: #f19e39;
@@ -242,7 +243,10 @@
     align-items: center;
     text-align: center;
   }
-  .footer-section .footer-left, .footer-section .footer-middle, .footer-section .footer-contact, .footer-section .footer-newsletter {
+  .footer-section .footer-left,
+  .footer-section .footer-middle,
+  .footer-section .footer-contact,
+  .footer-section .footer-newsletter {
     max-width: 100%;
   }
   .footer-section .footer-newsletter form {
@@ -254,5 +258,219 @@
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  font-family: Poppins;
+  margin-bottom: 97px;
+  margin-top: 97px;
+}
+.wrapper h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -3%;
+}
+.wrapper p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-bottom: 64px;
+  margin-top: 27px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 20px;
+}
+
+.card-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 370px;
+  text-align: left;
+}
+
+.card-item img {
+  width: 100%;
+  height: auto;
+}
+
+.card-item h3 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25.56px;
+  letter-spacing: -3%;
+  margin: 15px;
+  font-size: 1.2rem;
+}
+
+.card-item p {
+  font-family: Poppins;
+  margin: 0 15px 10px;
+  color: #555;
+}
+
+.card-item a {
+  font-family: Poppins;
+  display: block;
+  margin: 10px 15px 15px;
+  color: #ff6600;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 735px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.primary-btn {
+  background-color: #ff8200;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+}
+
+.companies-text {
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.companies-logos img {
+  height: 40px;
+  margin: 10px;
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+.decorative-shapes {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #d88c41;
+  border-radius: 10px;
+  top: 50px;
+  left: -20px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .hero-image {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 735px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .primary-btn, .secondary-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  .companies-logos img {
+    height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .primary-btn, .secondary-btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 320px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+  .primary-btn, .secondary-btn {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+  .companies-logos img {
+    height: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
